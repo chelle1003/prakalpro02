@@ -1,0 +1,55 @@
+print("Michelle Shannen Audrey Darmawan")
+print("NIM:71200564")
+print()
+
+'''
+Pak Hari merupakan seorang kepala keluarga dengan satu anak. Ia bekerja di Dinas Perhubungan sejak Januari tahun 2019. 
+Penghasilan bruto yang terdiri dari gaji, tunjangan, dan pembayaran lain adalah senilai Rp200.000.000. 
+Pak Hari membayar iuran pensiun dan tunjangan hari tua senilai Rp5.000.000 setiap bulan
+Berapakah PPh yang harus dibayar oleh pak Hari dalam setahun?
+note:
+Rp54.000.000 untuk pribadi wajib pajak
+Rp4.500.000 tambahan untuk wajib pajak kawin
+Rp4.500.000 tambahan untuk anak
+persentase pajak= 5%
+
+
+Input= Penghasilan bruto ; Iuran pensiun ; Persentase pajak
+
+Proses:
+1.menghitung penghasilan bersih (penghasilanbruto-iuran pensiun)
+2.menghitung PTKP(biaya untuk pribadi wajib pajak+biaya tambahan untuk wajib kawin+biaya tambahan untuk anak)
+3.menghitung PKP(penghasilan bersih-PTKP)
+4.menghitung PPh(PKP-persentase pajak)
+
+Output:
+1.Total penghasilan bersih
+2.Total PTKP
+3.Total PKP
+4.jumlah PPh yang harus dibayarkan pak Hari dalam setahun
+'''
+print("**********PROGRAM PENGHITUNG PPh**********")
+print()
+
+penghasilan_bruto=int(input("Masukkan penghasilan bruto = RP"))
+iuran_tunjangan= int(input("Masukkan iuran tunjangan= RP"))
+penghasilan_bersih= penghasilan_bruto-iuran_tunjangan
+print("Penghasilan bersih = RP",penghasilan_bersih)
+print()
+
+untuk_pribadi_wajib_pajak=54_000_000 
+tambahan_untuk_wajib_pajak_kawin=4_500_000
+tambahan_untuk_anak=4_500_000
+ptkp=untuk_pribadi_wajib_pajak+tambahan_untuk_wajib_pajak_kawin+tambahan_untuk_anak
+print("PTKP= RP",ptkp)
+print()
+
+pkp=penghasilan_bersih-ptkp
+print("PKP=Rp",pkp)
+print()
+
+persentase_pajak=int(input("Masukkan persentase pajak="))
+print()
+
+pph=pkp-persentase_pajak
+print("Maka, PPh yang harus dibayarkan oleh pak Hari selama setahun adalah = Rp",pph)
